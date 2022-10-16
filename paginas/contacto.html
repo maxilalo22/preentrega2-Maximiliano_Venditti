@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTIMAREP</title>
+    <link rel="stylesheet" href=../css/estilos.css>
+    <script src="https://kit.fontawesome.com/4e9be85d26.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <body class="body">
+        <header>
+            <nav class="inicio">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../paginas/sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="../paginas/beneficios.html">Beneficios de Entrenar</a></li>
+                    <li><a href="../paginas/planes.html">Planes de Entrenamiento</a></li>
+                    <li><a href="../paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="encabezadoImg">
+                <h1>CONTACTO</h1>
+            </div>
+            <form>
+                <div class="contactoP">
+                    <h2> ¡Gracias por ponerte en contacto con nosotros!</h2>
+                    <h3>--- El objetivo de este formulario es conocer un poco sobre vos, para poder ayudarte de la mejor
+                        manera.---</h3>
+                </div>
+                <div class="formulario">
+                    <h4>Nombre y Apellido</h4>
+                    <input type="text" name="Nombre" id="nombres" placeholder="Ingrese su nombre y apellido">
+                    <h4>Edad</h4>
+                    <input type="number" name="edad" id="edades" placeholder="Ingrese su edad">
+                    <h4>Correo Electrónico</h4>
+                    <input type="email" name="correo" id="correos" placeholder="Ingrese su email">
+                    <h4>Número de teléfono</h4>
+                    <input type="text" name="telefono" id="telefonos" placeholder="Ingrese su número de teléfono">
+                </div>
+                <section class="formulario2">
+                    <h4>¿Como nos has conocido?</h4>
+                    <div class="checkbox">
+                        <input type="checkbox" name="redes" id="conocer"><span>Redes Sociales</span><br>
+                        <input type="checkbox" name="Publicidades" id="conocer"><span>Publicidades</span><br>
+                        <input type="checkbox" name="Recomendacion de alguien" id="conocer"><span>Recomendación de
+                            alguien</span>
+                    </div>
+                </section>
+                <section class="form3">
+                    <div class="radio1">
+                        <h4>¿Tienes alguna lesión, patología o dolor que te impida actualmente hacer ejercicio?</h4>
+                        <input type="radio" name="datos" id="datos"><span>Si</span>
+                        <input type="radio" name="datos" id="datos"><span>No</span>
+                    </div>
+                    <div class="radio2">
+                        <h4>¿Actualmente sigues algún plan de entrenamiento o nutrición?</h4>
+                        <input type="radio" name="datos" id="datos"><span>Si</span>
+                        <input type="radio" name="datos" id="datos"><span>No</span>
+                    </div>
+                </section>
+                <section class="form4">
+                    <h4>¿En que plan de entrenamiento estás interesado?</h4>
+                    <input list="entrenamientos">
+                    <datalist id="entrenamientos">
+                        <option value="Entrenamiento Deportivo"></option>
+                        <option value="Entrenamiento Deportivo + Nutrición"></option>
+                        <option value="Entrenamiento Presencial"></option>
+                        <option value="Entrenamiento Presencial + Nutrición"></option>
+                        <option value="Entrenamiento Online"></option>
+                        <option value="Entrenamiento Online + Nutrición"></option>
+                        <option value="Plan Nutricional"></option>
+                    </datalist>
+                </section>
+                <div class="botones">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear">
+                </div>
+
+            </form>
+        </main>
+        <footer class="pieDePagina">
+            <div class="logo">
+                <h2> ULTIMAREP </h2>
+            </div>
+
+            <div class="siguenos">
+                <h2> SIGUENOS</h2>
+                <div class="redesSociales">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+
+
+        </footer>
+    </body>
+
+</html>
