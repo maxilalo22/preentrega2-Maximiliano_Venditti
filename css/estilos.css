@@ -1,21 +1,21 @@
 @font-face {
     font-family: "fuente1";
-    src: url(/fuentes/BlackOpsOne-Regular.ttf);
+    src: url(../fuentes/BlackOpsOne-Regular.ttf);
 }
 
 @font-face {
     font-family: "halelluya";
-    src: url(/fuentes/GloriaHallelujah-Regular.ttf);
+    src: url(../fuentes/GloriaHallelujah-Regular.ttf);
 }
 
 @font-face {
     font-family: "carter";
-    src: url(/fuentes/CarterOne-Regular.ttf);
+    src: url(../fuentes/CarterOne-Regular.ttf);
 }
 
 @font-face {
     font-family: "tadeo";
-    src: url(/fuentes/Righteous-Regular.ttf);
+    src: url(../fuentes/Righteous-Regular.ttf);
 }
 
 body {
@@ -32,15 +32,8 @@ section {
 }
 
 header ul {
-    background-image: url(/imagenes/back2.jpg);
+    background-image: url(../imagenes/back2.jpg);
     text-align: center;
-}
-
-.nav {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    float: left;
 }
 
 .body {
@@ -50,14 +43,6 @@ header ul {
 .header {
     text-align: center;
     padding: 25px 0;
-}
-
-nav li {
-    color: transparent;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    display: inline-flex;
 }
 
 .nav-link {
@@ -77,8 +62,8 @@ nav li {
     color: #fff;
 }
 
-.conteiner-fluid {
-    background-image: url(/imagenes/backconlogo.jpg);
+.container-fluid {
+    background-image: url(../imagenes/backconlogo.jpg);
     height: 500px;
     background-size: cover;
     display: flex;
@@ -87,7 +72,7 @@ nav li {
 }
 
 .encabezadoImg {
-    background-image: url(/imagenes/imag3.jpg);
+    background-image: url(../imagenes/imag3.jpg);
     height: 500px;
     background-size: cover;
     display: flex;
@@ -100,7 +85,6 @@ nav li {
     font-family: "tadeo";
     color: #fff;
     text-align: center;
-    display: inline-flex;
 }
 
 .video {
@@ -126,30 +110,20 @@ nav li {
 .conteiner {
     width: 100%;
     max-width: 1200px;
-    height: 430px;
     justify-content: center;
-    align-items: center;
     margin: auto;
-}
-
-.final {
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    padding-bottom: 80px;
 }
 
 .imagenes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     margin: 10px 20px 10px 20px;
-    float: left;
     width: 350px;
-
 }
 
 .imagenes img {
-    height: 220px;
-    width: 330px;
+    width: 100%;
 }
 
 .pieDePagina {
@@ -168,14 +142,12 @@ nav li {
 
 .siguenos h2 {
     font-size: 15px;
-    ;
     font-family: "halelluya";
     color: black;
     text-align: center;
 }
 
 .redesSociales a {
-
     text-decoration: none;
     width: 45px;
     height: 45px;
@@ -227,7 +199,9 @@ nav li {
     text-align: center;
     margin-top: 80px;
 }
-
+.conclusion{
+    padding-bottom: 40px;
+}
 .conclusion h2 {
     font-family: "tadeo";
     font-size: 30px;
@@ -255,11 +229,14 @@ nav li {
     font-size: 30px;
     color: red;
 }
-
+.cuerpoGen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .cuerpo1 {
     display: flex;
     margin-top: 80px;
-    justify-content: center;
 }
 
 .imagen1 {
@@ -303,7 +280,6 @@ nav li {
     display: flex;
     margin-top: 80px;
     margin-bottom: 80px;
-    justify-content: center;
 }
 
 .imagen3 {
@@ -329,9 +305,10 @@ nav li {
 }
 
 form {
-    display: flexbox;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .formNew {
@@ -345,7 +322,7 @@ form {
 }
 
 .formulario2 {
-    background: url(/imagenes/rojoclaro.jpg) no-repeat;
+    background: url(../imagenes/rojoclaro.jpg) no-repeat;
     background-size: cover;
     margin: 2cm;
     padding: 0.5cm;
@@ -359,7 +336,6 @@ form {
     font-style: italic;
     color: #fff;
     text-align: center;
-
 }
 
 .checkbox span {
@@ -368,7 +344,7 @@ form {
 }
 
 .form3 {
-    background: url(/imagenes/rojoclaro.jpg) no-repeat;
+    background: url(../imagenes/rojoclaro.jpg) no-repeat;
     background-size: cover;
     margin: 2cm;
     padding: 0.5cm;
@@ -409,7 +385,7 @@ form {
 }
 
 .form4 {
-    background: url(/imagenes/rojoclaro.jpg) no-repeat;
+    background: url(../imagenes/rojoclaro.jpg) no-repeat;
     background-size: cover;
     margin: 2cm;
     padding: 0.5cm;
@@ -428,9 +404,13 @@ form {
     text-align: center;
 }
 
+.vstack {
+    padding-bottom: 40px;
+}
+
 @media (max-width: 600px) {
-    .conteiner-fluid {
-        background-image: url(/imagenes/backconlogo.jpg);
+    .container-fluid {
+        background-image: url(../imagenes/backconlogo.jpg);
         height: 300px;
     }
 
@@ -442,11 +422,9 @@ form {
 
     .final {
         margin-top: 150px;
-        display: grid;
     }
 
     .imagenes img {
-        display: grid;
         width: 120px;
         height: 120px;
     }
@@ -458,7 +436,11 @@ form {
     .encabezadoImg h1 {
         color: darkgoldenrod;
         text-align: center;
-        font-size: 50px;
+        font-size: 45px;
+    }
+    .sobreNos{
+        flex-direction: column;
+        align-items: center;
     }
 
     .sobreNos h2 {
@@ -466,27 +448,30 @@ form {
     }
 
     .sobreNos img {
-        display: block;
         width: 200px;
         height: 200px;
     }
-
+    .segParr{
+        flex-direction: column;
+        align-items: center;
+    }
     .segParr h2 {
         font-size: 13px;
     }
 
     .segParr img {
-        display: block;
         width: 200px;
         height: 200px;
     }
-
+    .terParr{
+        flex-direction: column;
+        align-items: center;
+    }
     .terParr h2 {
         font-size: 13px;
     }
 
     .terParr img {
-        display: block;
         width: 200px;
         height: 200px;
     }
@@ -497,23 +482,24 @@ form {
     }
 
     .imagen1 img {
-        width: 170px;
-        height: 170px;
+        width: 150px;
+        height: 150px;
+       
     }
 
     .imagen2 img {
-        width: 170px;
-        height: 170px;
+        width: 150px;
+        height: 150px;
     }
 
     .imagen3 img {
-        width: 170px;
-        height: 170px;
+        width: 150px;
+        height: 150px;
     }
 
     .imagen4 img {
-        width: 170px;
-        height: 170px;
+        width: 150px;
+        height: 150px;
     }
 
     .radio1 input {
