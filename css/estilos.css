@@ -199,9 +199,11 @@ header ul {
     text-align: center;
     margin-top: 80px;
 }
-.conclusion{
+
+.conclusion {
     padding-bottom: 40px;
 }
+
 .conclusion h2 {
     font-family: "tadeo";
     font-size: 30px;
@@ -229,11 +231,13 @@ header ul {
     font-size: 30px;
     color: red;
 }
-.cuerpoGen{
+
+.cuerpoGen {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .cuerpo1 {
     display: flex;
     margin-top: 80px;
@@ -305,7 +309,7 @@ header ul {
 }
 
 form {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
@@ -316,9 +320,9 @@ form {
     background-size: cover;
     margin: 2cm;
     padding: 0.5cm;
-    -webkit-box-shadow:0px 0px 28px 1px rgba(227,9,9,0.9);
-    -moz-box-shadow: 0px 0px 28px 1px rgba(227,9,9,0.9);
-    box-shadow: 0px 0px 28px 1px rgba(227,9,9,0.9);
+    -webkit-box-shadow: 0px 0px 28px 1px rgba(227, 9, 9, 0.9);
+    -moz-box-shadow: 0px 0px 28px 1px rgba(227, 9, 9, 0.9);
+    box-shadow: 0px 0px 28px 1px rgba(227, 9, 9, 0.9);
 }
 
 .formulario2 {
@@ -438,7 +442,8 @@ form {
         text-align: center;
         font-size: 45px;
     }
-    .sobreNos{
+
+    .sobreNos {
         flex-direction: column;
         align-items: center;
     }
@@ -451,10 +456,12 @@ form {
         width: 200px;
         height: 200px;
     }
-    .segParr{
+
+    .segParr {
         flex-direction: column;
         align-items: center;
     }
+
     .segParr h2 {
         font-size: 13px;
     }
@@ -463,10 +470,12 @@ form {
         width: 200px;
         height: 200px;
     }
-    .terParr{
+
+    .terParr {
         flex-direction: column;
         align-items: center;
     }
+
     .terParr h2 {
         font-size: 13px;
     }
@@ -484,7 +493,7 @@ form {
     .imagen1 img {
         width: 150px;
         height: 150px;
-       
+
     }
 
     .imagen2 img {
