@@ -46,7 +46,7 @@ header .nav-link {
   font-weight: bolder;
   text-decoration: overline;
 }
-header hover {
+header .nav-link:hover {
   background-color: black;
   color: white;
 }
@@ -108,7 +108,7 @@ header hover {
   width: 350px;
 }
 .final .imagenes img {
-  width: 100%;
+  width: 90%;
 }
 
 .pieDePagina {
@@ -207,81 +207,13 @@ header hover {
   color: red;
 }
 
-.cuerpoGen {
+.carousel.slide {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.carousel.slide .carousel-item.active {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-}
-.cuerpoGen .cuerpo1 {
-  display: flex;
-  margin-top: 80px;
-}
-.cuerpoGen .imagen1 {
-  position: relative;
-  margin-right: 80px;
-}
-.cuerpoGen .imagen2 {
-  position: relative;
-}
-.cuerpoGen .cuerpo2 {
-  display: flex;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-.cuerpoGen .imagen3 {
-  margin-right: 80px;
-  position: relative;
-}
-.cuerpoGen .imagen4 {
-  position: relative;
-}
-.cuerpoGen .animate-bg:before,
-.cuerpoGen .animate-bg:after {
-  content: "";
-  position: absolute;
-  left: -8px;
-  top: -8px;
-  background: linear-gradient(120deg, red, white, red, black);
-  background-size: 300%;
-  width: calc(100% + 16px);
-  height: calc(100% + 16px);
-  z-index: -1;
-  -webkit-animation: BGgradient 15s ease infinite;
-          animation: BGgradient 15s ease infinite;
-}
-@-webkit-keyframes BGgradient {
-  0% {
-    background-position: 0% 200%;
-  }
-  50% {
-    background-position: 200% 0%;
-  }
-  100% {
-    background-position: 0% 330%;
-  }
-}
-@keyframes BGgradient {
-  0% {
-    background-position: 0% 200%;
-  }
-  50% {
-    background-position: 200% 0%;
-  }
-  100% {
-    background-position: 0% 330%;
-  }
-}
-.contactoP h2 {
-  color: gold;
-  text-align: center;
-  font-family: "halelluya";
-  font-size: 30px;
-}
-
-.contactoP h3 {
-  font-weight: bolder;
-  color: #fff;
-  text-align: center;
 }
 
 form {
@@ -291,13 +223,23 @@ form {
   justify-content: center;
 }
 
+.contactoP h2 {
+  color: gold;
+  text-align: center;
+  font-family: "halelluya";
+  font-size: 30px;
+}
+.contactoP h3 {
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+
 .formNew {
   background-image: url(../imagenes/back2.jpg);
   background-size: cover;
   margin: 2cm;
   padding: 0.5cm;
-  -webkit-box-shadow: 0px 0px 28px 1px rgba(227, 9, 9, 0.9);
-  -moz-box-shadow: 0px 0px 28px 1px rgba(227, 9, 9, 0.9);
   box-shadow: 0px 0px 28px 1px rgba(227, 9, 9, 0.9);
 }
 
@@ -306,19 +248,14 @@ form {
   background-size: cover;
   margin: 2cm;
   padding: 0.5cm;
-  justify-content: center;
-  -webkit-box-shadow: 0px 0px 28px 1px rgba(247, 247, 247, 0.9);
-  -moz-box-shadow: 0px 0px 28px 1px rgba(247, 247, 247, 0.9);
   box-shadow: 0px 0px 28px 1px rgba(247, 247, 247, 0.9);
 }
-
 .formulario2 h4 {
   font-style: italic;
-  color: #fff;
+  color: white;
   text-align: center;
 }
-
-.checkbox span {
+.formulario2 .checkbox span {
   color: black;
   font-weight: bolder;
 }
@@ -328,38 +265,22 @@ form {
   background-size: cover;
   margin: 2cm;
   padding: 0.5cm;
-  justify-content: center;
-  align-items: center;
-  -webkit-box-shadow: 0px 0px 28px 1px rgba(247, 247, 247, 0.9);
-  -moz-box-shadow: 0px 0px 28px 1px rgba(247, 247, 247, 0.9);
   box-shadow: 0px 0px 28px 1px rgba(247, 247, 247, 0.9);
 }
-
 .form3 h4 {
   font-style: italic;
   font-weight: bold;
-  color: #fff;
+  color: white;
   text-align: center;
 }
-
 .form3 input {
   border-color: white;
 }
-
-.radio1 input {
-  margin-left: 8cm;
-}
-
-.radio2 input {
-  margin-left: 8cm;
-}
-
-.radio1 span {
+.form3 .radio1 span {
   color: black;
   font-weight: bolder;
 }
-
-.radio2 span {
+.form3 .radio2 span {
   color: black;
   font-weight: bolder;
 }
@@ -369,18 +290,12 @@ form {
   background-size: cover;
   margin: 2cm;
   padding: 0.5cm;
-  justify-content: center;
-  align-items: center;
-  -webkit-box-shadow: 0px 0px 28px 1px rgba(247, 247, 247, 0.9);
-  -moz-box-shadow: 0px 0px 28px 1px rgba(247, 247, 247, 0.9);
   box-shadow: 0px 0px 28px 1px rgba(247, 247, 247, 0.9);
 }
-
-
 .form4 h4 {
   font-style: italic;
   font-weight: bold;
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
@@ -395,11 +310,14 @@ form {
   }
   .video {
     display: grid;
-    width: 400px;
+    max-width: 400px;
     height: 200px;
   }
   .final {
     margin-top: 150px;
+  }
+  .conteiner {
+    flex-direction: column;
   }
   .imagenes img {
     width: 120px;
@@ -411,7 +329,7 @@ form {
   .encabezadoImg h1 {
     color: darkgoldenrod;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
   }
   .sobreNos {
     flex-direction: column;
@@ -450,32 +368,22 @@ form {
     font-size: 16px;
     margin-bottom: 40px;
   }
-  .imagen1 img {
-    width: 150px;
-    height: 150px;
+  .carousel-item img {
+    width: 300px;
   }
-  .imagen2 img {
-    width: 150px;
-    height: 150px;
+  .cuerpo1 {
+    flex-direction: column;
+    align-items: center;
   }
-  .imagen3 img {
-    width: 150px;
-    height: 150px;
-  }
-  .imagen4 img {
-    width: 150px;
-    height: 150px;
+  .cuerpo2 {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .contactoP {
-    justify-items: center;
+    width: 100%;
   }
-  .contactoP h2, .contactoP h4 {
+  .contactoP h2, .contactoP h3 {
     font-size: 20px;
-  }
-  .radio1 input {
-    margin: 0cm 1cm 0cm 1cm;
-  }
-  .radio2 input {
-    margin: 0cm 1cm 0cm 1cm;
   }
 }/*# sourceMappingURL=estilos.css.map */

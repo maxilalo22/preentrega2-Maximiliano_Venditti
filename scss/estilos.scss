@@ -1,4 +1,3 @@
-
 @import "fuentes";
 @import "colores";
 
@@ -17,10 +16,11 @@ section {
 }
 
 header {
-    .header{ 
-    text-align: center;
-    padding: 25px 0;
+    .header {
+        text-align: center;
+        padding: 25px 0;
     }
+
     ul {
         background-image: url(../imagenes/back2.jpg);
         text-align: center;
@@ -36,12 +36,13 @@ header {
         text-align: center;
         font-weight: bolder;
         text-decoration: overline;
+        &:hover {
+            background-color: $Col_1;
+            color: $Col_2;
+        }
     }
 
-    & hover {
-        background-color: $Col_1;
-        color: $Col_2;
-    }
+
 }
 
 @mixin estilo-portada {
@@ -51,6 +52,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .container-fluid {
     background-image: url(../imagenes/backconlogo.jpg);
     @include estilo-portada();
@@ -105,7 +107,7 @@ header {
     }
 
     .imagenes img {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -214,66 +216,16 @@ header {
         color: $Col_5;
     }
 }
-
-.cuerpoGen {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .cuerpo1 {
+.carousel.slide{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .carousel-item.active{
         display: flex;
-        margin-top: 80px;
-    }
-
-    .imagen1 {
-        position: relative;
-        margin-right: 80px;
-    }
-    .imagen2 {
-        position: relative;
-    }
-    .cuerpo2 {
-        display: flex;
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
-    
-    .imagen3 {
-        margin-right: 80px;
-        position: relative;
-    }
-    
-    .imagen4 {
-        position: relative
-    }
-
-    .animate-bg:before,
-    .animate-bg:after {
-        content: '';
-        position: absolute;
-        left: -8px;
-        top: -8px;
-        background: linear-gradient(120deg, $Col_5, $Col_2, $Col_5, $Col_1);
-        background-size: 300%;
-        width: calc(100% + 16px);
-        height: calc(100% + 16px);
-        z-index: -1;
-        animation: BGgradient 15s ease infinite;
-    }
-    @keyframes BGgradient {
-        0% {
-            background-position: 0% 200%;
-        }
-    
-        50% {
-            background-position: 200% 0%;
-        }
-    
-        100% {
-            background-position: 0% 330%;
-        }
+        justify-content: center;
     }
 }
+
+
 @mixin shadows-forms {
     background-size: cover;
     margin: 2cm;
@@ -290,14 +242,15 @@ form {
     justify-content: center;
 }
 
-.contactoP { 
-    
+.contactoP {
+
     h2 {
-    color: $Col_6;
-    text-align: center;
-    font-family: "halelluya";
-    font-size: 30px;
+        color: $Col_6;
+        text-align: center;
+        font-family: "halelluya";
+        font-size: 30px;
     }
+
     h3 {
         font-weight: bolder;
         color: $Col_2;
@@ -307,17 +260,24 @@ form {
 
 .formNew {
     background-image: url(../imagenes/back2.jpg);
-    @include shadows-forms (227, 9, 9, 0.9);
+    background-size: cover;
+    margin: 2cm;
+    padding: 0.5cm;
+    -webkit-box-shadow: 0px 0px 28px 1px rgba(227, 9, 9, 0.9);
+    -moz-box-shadow: 0px 0px 28px 1px rgba(227, 9, 9, 0.9);
+    box-shadow: 0px 0px 28px 1px rgba(227, 9, 9, 0.9);
 }
 
 .formulario2 {
     background: url(../imagenes/rojoclaro.jpg) no-repeat;
     @include shadows-forms;
+
     h4 {
         font-style: italic;
         color: $Col_2;
         text-align: center;
     }
+
     .checkbox span {
         color: $Col_1;
         font-weight: bolder;
@@ -327,29 +287,23 @@ form {
 .form3 {
     background: url(../imagenes/rojoclaro.jpg) no-repeat;
     @include shadows-forms;
+
     h4 {
         font-style: italic;
         font-weight: bold;
         color: $Col_2;
         text-align: center;
     }
+
     input {
         border-color: $Col_2;
     }
-    
-    .radio1 input {
-        margin-left: 8cm;
-    }
-    
-    .radio2 input {
-        margin-left: 8cm;
-    }
-    
+
     .radio1 span {
         color: $Col_1;
         font-weight: bolder;
     }
-    
+
     .radio2 span {
         color: $Col_1;
         font-weight: bolder;
@@ -359,6 +313,7 @@ form {
 .form4 {
     background: url(../imagenes/rojoclaro.jpg) no-repeat;
     @include shadows-forms;
+
     h4 {
         font-style: italic;
         font-weight: bold;
@@ -371,27 +326,24 @@ form {
     padding-bottom: 40px;
 }
 
-@mixin tamaño-imagenes {
-    width: 150px;
-    height: 150px;
-}
-
 @media (max-width: 600px) {
     .container-fluid {
         background-image: url(../imagenes/backconlogo.jpg);
         height: 300px;
-    }
+    } 
 
     .video {
         display: grid;
-        width: 400px;
+        max-width: 400px;
         height: 200px;
     }
 
     .final {
         margin-top: 150px;
     }
-
+    .conteiner{
+        flex-direction: column;
+    }
     .imagenes img {
         width: 120px;
         height: 120px;
@@ -399,12 +351,11 @@ form {
 
     .encabezadoImg {
         height: 300px;
-    }
-
-    .encabezadoImg h1 {
-        color: $Col_7;
-        text-align: center;
-        font-size: 45px;
+        h1 {
+            color: $Col_7;
+            text-align: center;
+            font-size: 40px;
+        }
     }
 
     .sobreNos {
@@ -453,28 +404,23 @@ form {
         font-size: 16px;
         margin-bottom: 40px;
     }
-
-    .imagen1 img {
-        @include tamaño-imagenes();
+    .carousel-item img{
+        width: 300px;
+    }
+    .cuerpo1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuerpo2{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .contactoP{
+        width: 100%;
+        h2,h3{
+            font-size: 20px;
+        }
     }
 
-    .imagen2 img {
-        @include tamaño-imagenes();
-    }
-
-    .imagen3 img {
-        @include tamaño-imagenes();
-    }
-
-    .imagen4 img {
-        @include tamaño-imagenes();
-    }
-
-    .radio1 input {
-        margin: 0cm 1cm 0cm 1cm;
-    }
-
-    .radio2 input {
-        margin: 0cm 1cm 0cm 1cm;
-    }
 }

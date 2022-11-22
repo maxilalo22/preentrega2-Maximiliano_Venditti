@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="32x32" href="../imagenes/favicon-32x32.png">
+    <meta name="description"
+        content="Somos un grupo de profesionales preparados para ayudarte a conseguir tus objetivos en el mundo del deporte. Con rutinas, planes alimenticios y toda la información que necesites">
+    <meta name="keywords"
+        content="gym, gimnasio, entrenamiento, asesoria, couch, plan deportivo, plan alimenticio, deportes, fitness, fit">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
@@ -24,39 +28,55 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../paginas/sobrenosotros.html">Sobre Nosotros</a>
+                <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../paginas/beneficios.html">Beneficios de Entrenar</a>
+                <a class="nav-link" href="./beneficios.html">Beneficios de Entrenar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../paginas/planes.html">Planes de Entrenamiento</a>
+                <a class="nav-link" href="./planes.html">Planes de Entrenamiento</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
         </ul>
     </header>
     <section class="encabezadoImg">
         <h1>PLANES DE ENTRENAMIENTO</h1>
     </section>
-    <div class="cuerpoGen">
-        <div class="cuerpo1">
-            <div class="imagen1 animate-bg">
-                <img src="../imagenes/entrenamientodeportivo.png" width="500" height="500" alt="planDeportivo">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../imagenes/entrenamientoonline.png"  alt="...">
             </div>
-            <div class="imagen2 animate-bg">
-                <img src="../imagenes/entrenamientopresencial.png" width="500" height="500" alt="planPresencial">
+            <div class="carousel-item">
+                <img src="../imagenes/entrenamientodeportivo.png"  alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../imagenes/entrenamientopresencial.png"  alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../imagenes/plannutricional.png"  alt="...">
             </div>
         </div>
-        <div class="cuerpo2">
-            <div class="imagen3 animate-bg">
-                <img src="../imagenes/entrenamientoonline.png" width="500" height="500" alt="planOnline">
-            </div>
-            <div class="imagen4 animate-bg">
-                <img src="../imagenes/plannutricional.png" width="500" height="500" alt="planNutri">
-            </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <footer class="pieDePagina">
